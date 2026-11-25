@@ -65,7 +65,6 @@ A malha fechada percorre quatro etapas continuamente:
 - `tests/test_ctrl.c`, `sil_shim.c/.h` e `tests.mk` — testes unitários nativos em C (2165 verificações) do firmware portável compilado no PC.
 - `tests/hw_check.py` — valida protocolo, período de 1 ms, failsafe e flash na Pico sem movimentar o cursor.
 - `tests/hw_loop.py` — executa o ensaio automatizado completo em malha fechada (`ident`, `step`, `sine`, `ramp`, `smooth`).
-- `launch.py`, `jogar_shooter3d.bat` e `rodar_hw_loop.bat` — atalhos no Windows que localizam a porta COM da Pico automaticamente e gerenciam a abertura/fechamento coordenado da janela 3D e do `tracker`.
 - `requirements.txt` — dependências Python do lado PC (`pygame`, `numpy`, `pyserial`, `opencv-python`, `mss>=9.0,<10`, `matplotlib`, `dxcam`).
 
 ### Documentação e medições (`docs/`)

@@ -61,14 +61,9 @@ pip install -r requirements.txt
 
 ### 4. Rodar com a placa conectada
 
-Com `host\.venv` criado, os dois atalhos na pasta `host/` detectam automaticamente a porta COM da Pico (`VID:PID 1209:0001`):
-
-- [`host/jogar_shooter3d.bat`](host/jogar_shooter3d.bat) — abre o **Shooter 3D** e inicia o `tracker` em modo automático.
-- [`host/rodar_hw_loop.bat`](host/rodar_hw_loop.bat) — executa o ensaio completo de identificação e trajetórias (`tests/hw_loop.py`).
-
 Por segurança, a placa sempre inicia com a saída HID desabilitada. Dê uma **pressão curta no botão BOOTSEL** para habilitar o movimento do cursor; segurar o botão por **1 s** aciona a parada de emergência. Mantenha a janela do Shooter 3D descoberta na tela.
 
-Se preferir rodar manualmente em dois terminais (trocando `COM5` pela porta da sua placa):
+Para rodar o Shooter 3D com a placa em dois terminais (trocando `COM5` pela porta da sua placa):
 
 ```powershell
 # Terminal 1 — janela do Shooter 3D
@@ -76,6 +71,12 @@ python -m testapp --mode shooter
 
 # Terminal 2 — rastreador e comunicação serial
 python -m tracker --port COM5 --mode auto
+```
+
+Para rodar o ensaio automatizado completo (identificação + degrau, senoide, rampa e aleatório):
+
+```powershell
+python tests/hw_loop.py COM5
 ```
 
 **Controles na janela do `testapp`:** `1`–`4` trajetórias de ensaio (degrau, rampa, senoide, aleatório), `5` modo Shooter 3D (HP e respawn), `Clique`/`Espaço` atirar, `F` auto-fire ao travar no alvo, `V` alterna visual 3D/2D clássico (`--classic`), `ESC` sair.
