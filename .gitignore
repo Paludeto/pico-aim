@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+build/
+*.exe
+*.dll
+*.so
+host/tests/test_ctrl
+hw_loop_logs/
+log_*.csv
+testapp_*.csv
+/host/*.csv
+/host/*.png
+.vscode/
+.claude/
