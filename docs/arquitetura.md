@@ -1,5 +1,7 @@
 # Arquitetura e Resultados Experimentais
 
+*[English version](en/architecture.md)*
+
 Este documento resume as decisões de arquitetura do firmware no RP2040, a comunicação USB, o projeto do controlador digital em ponto fixo e os dados medidos em bancada.
 
 ## 1. Divisão entre os núcleos do RP2040

@@ -7,6 +7,8 @@
 *Projeto final de Sistemas Microcontrolados — UTFPR Câmpus Apucarana*  
 *Por **Gabriel Paludeto** e **Daniel Elder Kroda***
 
+🇧🇷 **Português** · [🇺🇸 English](README.en.md)
+
 <br/>
 
 ![RP2040](https://img.shields.io/badge/MCU-RP2040%20Dual--Core-C51A4A?style=for-the-badge&logo=raspberrypi&logoColor=white)
@@ -219,8 +221,8 @@ make -f tests.mk test
 
 ## 📚 Documentação
 
-- 📘 [`docs/guia_codigo.md`](docs/guia_codigo.md) — explicação do funcionamento ponta a ponta e papel de cada arquivo do repositório.
-- 📐 [`docs/arquitetura.md`](docs/arquitetura.md) — particionamento dual-core, descritores USB, protocolo CDC, projeto do controlador e medições detalhadas.
+- 📘 [`docs/guia_codigo.md`](docs/guia_codigo.md) ([English](docs/en/code_guide.md)) — explicação do funcionamento ponta a ponta e papel de cada arquivo do repositório.
+- 📐 [`docs/arquitetura.md`](docs/arquitetura.md) ([English](docs/en/architecture.md)) — particionamento dual-core, descritores USB, protocolo CDC, projeto do controlador e medições detalhadas.
 - 🎞️ [`docs/Rastreador de cursor com RP2040.pdf`](docs/Rastreador%20de%20cursor%20com%20RP2040.pdf) — slides da apresentação final do projeto.
 - 📈 [`docs/medicoes/`](docs/medicoes/) — registros CSV reais coletados em bancada.
 

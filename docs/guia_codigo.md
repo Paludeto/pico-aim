@@ -1,5 +1,7 @@
 # Guia de Funcionamento e Estrutura do Código
 
+*[English version](en/code_guide.md)*
+
 Este guia explica de forma direta como o sistema funciona de ponta a ponta e o que cada arquivo do repositório faz.
 
 ## 1. Funcionamento geral
